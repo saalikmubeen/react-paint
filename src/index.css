@@ -7,7 +7,42 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.colors-panel {
+  position: fixed;
+  top: 40px;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  z-index: 10;
+  max-width: 336px;
+  width: 90%;
+}
+
+.colors {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 95%;
+
+}
+
+.color {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;
+}
+
+
+.edit {
+  position: fixed;
+  bottom: 120px;
+  left: 20%;
+  z-index: 10;
+}
+
+.file {
+  position: fixed;
+  bottom: 40px;
+  right: 20%;
+  z-index: 10;
 }
