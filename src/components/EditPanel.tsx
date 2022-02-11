@@ -1,5 +1,5 @@
 import {useDispatch} from "react-redux";
-import {undo, redo} from "./actions";
+import {undo, redo} from "../actions";
 
 const EditPanel = () => {
     const dispatch = useDispatch();

@@ -1,22 +1,19 @@
 import {useRef, useEffect} from "react";
 import {useDispatch} from 'react-redux';
-import {beginStroke, updateStroke, endStroke, loadFromLocalStorage} from "./actions";
-import {useTypedSelector} from "./reducers";
-import { clearCanvas, drawStroke, setCanvasSize } from "./utils";
+import {beginStroke, updateStroke, endStroke, loadFromLocalStorage} from "../actions";
+import {useTypedSelector} from "../reducers";
+import { clearCanvas, drawStroke, setCanvasSize } from "../utils";
 import ColorPanel from "./ColorPanel";
 import EditPanel from "./EditPanel";
 import FilePanel from "./FilePanel";
-import useWindowDimensions from "./useWindowDimensions";
 
-const WIDTH = 1024;
-const HEIGHT = 768;
+// const WIDTH = 1024;
+// const HEIGHT = 768;
 
 function App() {
     const canvasRef = useRef<HTMLCanvasElement>(null);
 
-    // const { height, width } = useWindowDimensions();
     const { innerWidth: width, innerHeight: height } = window;
-    console.log(height, width);
 
     const dispatch = useDispatch();
     const {currentStroke, historyIndex, strokes} = useTypedSelector((state) => state);

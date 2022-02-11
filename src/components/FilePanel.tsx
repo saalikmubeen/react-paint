@@ -1,6 +1,6 @@
 import React from "react";
 import {saveAs} from "file-saver";
-import { getCanvasImage } from "./utils";
+import { getCanvasImage } from "../utils";
 
 
 type FilePanelProps = {

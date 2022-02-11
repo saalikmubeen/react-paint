@@ -1,11 +1,12 @@
-import { Point } from "./types";
+import { Point } from "../types";
 
 export const drawStroke = (
-    context: CanvasRenderingContext2D, 
-    points: Point[], color: string) => {
-    
-    if (!points.length){
-        return
+    context: CanvasRenderingContext2D,
+    points: Point[],
+    color: string
+) => {
+    if (!points.length) {
+        return;
     }
 
     // context.font = '48px serif';
@@ -15,15 +16,13 @@ export const drawStroke = (
     context.beginPath();
     context.moveTo(points[0].x, points[0].y);
 
-
     points.forEach((point) => {
         context.lineTo(point.x, point.y);
         context.stroke();
-    })
+    });
 
     context.closePath();
-
-}
+};
 
 export const setCanvasSize = (
     canvas: HTMLCanvasElement,
@@ -37,7 +36,6 @@ export const setCanvasSize = (
     canvas.getContext("2d")?.scale(2, 2);
 };
 
-
 export const clearCanvas = (canvas: HTMLCanvasElement) => {
     const context = canvas.getContext("2d");
     if (!context) {
@@ -46,7 +44,6 @@ export const clearCanvas = (canvas: HTMLCanvasElement) => {
     context.fillStyle = "white";
     context.fillRect(0, 0, canvas.width, canvas.height);
 };
-
 
 export const getCanvasImage = (
     canvas: HTMLCanvasElement | null
