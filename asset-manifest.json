@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-paint/static/css/main.0afe3b2d.css",
-    "main.js": "/react-paint/static/js/main.41d74248.js",
+    "main.css": "/react-paint/static/css/main.bfbffcf5.css",
+    "main.js": "/react-paint/static/js/main.a3f028c3.js",
     "static/js/787.abb6f6a6.chunk.js": "/react-paint/static/js/787.abb6f6a6.chunk.js",
     "static/media/PerfectDOSVGA437Win.woff": "/react-paint/static/media/PerfectDOSVGA437Win.86368cc9dec15d71c965.woff",
     "static/media/PerfectDOSVGA437Win.woff2": "/react-paint/static/media/PerfectDOSVGA437Win.7dc718899b215fa16aa7.woff2",
@@ -10,12 +10,12 @@
     "static/media/ms_sans_serif.woff2": "/react-paint/static/media/ms_sans_serif.0348082abb503fb6a8c2.woff2",
     "static/media/ms_sans_serif_bold.woff2": "/react-paint/static/media/ms_sans_serif_bold.7fcf57cc6e87ecddbf64.woff2",
     "index.html": "/react-paint/index.html",
-    "main.0afe3b2d.css.map": "/react-paint/static/css/main.0afe3b2d.css.map",
-    "main.41d74248.js.map": "/react-paint/static/js/main.41d74248.js.map",
+    "main.bfbffcf5.css.map": "/react-paint/static/css/main.bfbffcf5.css.map",
+    "main.a3f028c3.js.map": "/react-paint/static/js/main.a3f028c3.js.map",
     "787.abb6f6a6.chunk.js.map": "/react-paint/static/js/787.abb6f6a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0afe3b2d.css",
-    "static/js/main.41d74248.js"
+    "static/css/main.bfbffcf5.css",
+    "static/js/main.a3f028c3.js"
   ]
 }
